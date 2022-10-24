@@ -1,0 +1,1 @@
+import{_ as e,o as r,c as o}from"../default/default-d2bf08c0.js";var t=e({},[["render",function(e,t){return r(),o("div")}],["__file","E:/other/work/work/work/src/views/question/index.vue"]]);export{t as default};
