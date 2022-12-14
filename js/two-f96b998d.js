@@ -1,0 +1,1 @@
+import{_ as e,o,c as r}from"../default/default-04c9f868.js";const s={class:"common-pages que-one"};var t=e({},[["render",function(e,t){return o(),r("div",s)}],["__file","E:/other/work/work/work/src/views/question/two.vue"]]);export{t as default};
