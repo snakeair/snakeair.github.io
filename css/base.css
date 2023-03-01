@@ -347,6 +347,7 @@ input[type="number"] { -moz-appearance: textfield; }
   .index-page .campaign .campaign-main .btn-box { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 100vw; bottom: -40px; left: auto; right: 0; } }
 @media screen and (max-width: 768px) { .index-page .nav-main { width: 100vw; }
   .index-page .nav-main .login-box, .index-page .nav-main .nav-list { display: none; }
-  .index-page .nav-main .menu-btn { display: block; margin-left: 10px; margin-right: calc(100% - 240px ); } }
+  .index-page .nav-main .menu-btn { display: block; margin-left: 10px; margin-right: calc(100% - 240px ); }
+  .index-page .banner-floor .swiper-slide .title { display: none; } }
 
 /*# sourceMappingURL=base.css.map */

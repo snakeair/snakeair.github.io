@@ -107,5 +107,12 @@
         margin-right: calc(100% - 240px );
       }
     }
+    .banner-floor{
+      .swiper-slide{
+        .title{
+          display: none;
+        }
+      }
+    }
   }
 }
