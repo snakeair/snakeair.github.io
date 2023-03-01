@@ -1,1 +1,0 @@
-import{_ as e,o as a,c as t,b as r}from"../default/default-c7e8e363.js";const l={},o=[r("label",{for:""},[r("input",{type:"file",name:"cover",accept:"image/*",id:"file",onfocus:"this.blur()"})],-1)];var f=e(l,[["render",function(e,r){return a(),t("div",null,o)}]]);export{f as default};

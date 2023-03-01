@@ -1,1 +1,0 @@
-import{_ as e,o,e as r,f as t}from"../default/default-90c39713.js";const a={},i=[t("label",{for:""},[t("input",{type:"file",name:"cover",accept:"image/*",id:"file",onfocus:"this.blur()"})],-1)];var f=e(a,[["render",function(e,t){return o(),r("div",null,i)}],["__file","E:/other/work/work/work/src/views/photo/index.vue"]]);export{f as default};
