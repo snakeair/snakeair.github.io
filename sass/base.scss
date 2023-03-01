@@ -37,6 +37,7 @@
       .nav-list{
         .nav-box{
           width:calc((100vw - 340px) / 4);
+          font-size: vwPad(24);
           .show-list{
             width: calc((100vw - 340px) / 4);
           }
