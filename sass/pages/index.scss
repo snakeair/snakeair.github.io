@@ -396,7 +396,7 @@
         display: none;
       }
       .mySwiper{
-        height: vwPad(580);
+        height: 50vw;
         .title{
           @include holder(2);
           font-size: vwPad(52); width:60%; margin-top: vwPad(350); margin-left: 5vw;
@@ -461,10 +461,10 @@
       }
       .get-more{
         display: block;  float: none;  writing-mode: horizontal-tb; text-align: left; vertical-align: middle; position: absolute;
-        height: auto; font-size: vwPad(25); top: 10px;
+        height: auto; font-size: 20px; top: 10px;
           right: 20px;
         .icon-box{
-          vertical-align: middle; margin-top: -2px; margin-left: 4px; width:vwPad(30); height:vwPad(30);
+          vertical-align: middle; margin-top: -2px; margin-left: 4px; width:20px; height:20px;
         }
       }
     }
@@ -512,6 +512,7 @@
 
 @media screen and (max-width: 768px) {
   .index-page{
+    
     .nav-line{
       display: none;
     }
@@ -533,6 +534,9 @@
           }
         }
       }
+      .tag, .reg{
+        display: none;
+      }
     }
     .banner-floor{
       .swiper-slide{
@@ -550,7 +554,7 @@
           width:100%; padding: 20px; height:auto;
           .campaign-title{
             width:80%;
-            font-size: vw(28);
+            font-size: 24px;
           }
           .btn-box{
             .show-btn,
@@ -584,9 +588,9 @@
         }
       }
       .get-more{
-        font-size: vw(20);
+        font-size: 16px;
         .icon-box{
-          width:vw(24); height:vw(24)
+          width:16px; height:16px
         }
       }
     }
