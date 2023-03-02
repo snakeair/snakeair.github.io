@@ -9,7 +9,7 @@
     width:100%; padding:0 50px; margin-top: 40px;
     .tab-btn{
       display: block; text-align: center;
-      width:50%; height:24px; padding-bottom: 16px;
+      width:50%; height:24px; padding-bottom: 16px; font-size: 18px;
       border-bottom:2px solid  #d1d2d4;
       transition: all .5s;
       &.cur{
@@ -43,17 +43,18 @@
         padding-left: 25px;
       }
       .inp-sms,
-      .inp-code {
+      .inp-code,
+      .inp-pwd-code {
         width: calc(100% - 280px);
         height: 40px;
         border: 1px solid #ddd; margin-right: 20px;
         padding-left: 25px;
       }
       .inp-name,
-      .inp-name{
+      .inp-pwd{
         width:calc(100% - 130px); line-height: 40px; padding-left: 25px; border: 1px solid #ddd;
       }
-      .get-code,{
+      .get-code{
         width: 130px;
         height: 40px;
         background: #f45e58;
@@ -135,7 +136,7 @@
         width: calc(100% - 180px);
       }
     }
-    .reg-btn{
+    .submit-btn{
       text-align: center;
       width:100%;  height:40px; font-size: 16px; line-height: 40px; border-radius: 6px; margin-bottom: 20px;
       color:$white; background-color: #f45e58;
@@ -159,8 +160,6 @@
       }
     }
   }
-  
-  
 }
 
 
@@ -208,6 +207,103 @@
     &:last-child {
       transform: translateY(-9px) rotate(45deg);
       transform-origin: left top;
+    }
+  }
+}
+
+
+.layer-msg{
+  display: none; overflow: hidden; 
+  top:30%; border-radius: 6px;
+  .show-main{
+    @include flex(left, center);
+    text-align: center; box-sizing: border-box;
+    width:400px; height:50px; line-height: 50px; padding-left: 20px; z-index:200; 
+    background-color:#ffebec;
+    .icon{
+      display: block;
+      width:25px; height:25px; margin-right: 6px;
+      .img{
+        display: block;
+        width:100%;
+      }
+    }
+    .text{
+      color:$red; font-size: 16px;
+    }
+  }
+  
+}
+
+
+.layer-wx-login{
+  width:500px; padding:20px;
+  .img-box{
+    width:278px; height:278px; margin:30px auto 0;
+    border:1px solid #ebebeb;
+    .img{
+      display: block;
+      width: 100%;
+    }
+  }
+  .use-wx{
+    text-align: center;
+    font-size: 16px; padding:10px 0 30px;
+    color:#666;
+  }
+  .reg-box{
+      @include flex(both, center); 
+      box-sizing: border-box;
+      width:100%; 
+      .left{
+        vertical-align: middle;
+        font-size: 16px; line-height: 28px;
+        color:#666; 
+        .icon-box{
+          display: inline-block; vertical-align: middle;
+          width:28px; height:28px; margin-right: 6px;
+          .icon{
+            display: block;
+            width:100%;
+          }
+        }
+      }
+      .right{
+        font-size: 16px;
+        color:#666;
+        .reg-btn{
+          color:$red;
+        }
+      }
+    }
+}
+.layer-wx-reg{
+  @extend .layer-wx-login;
+  .use-wx{
+    padding-bottom: 10px;
+  }
+  .pact-box{
+    text-align: center;
+    font-size: 12px; padding-bottom: 20px;
+    color:#999;
+    .a-pact{
+      color:$blue;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .layer-login{
+    width:80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .layer-login {
+    width: 90%; 
+    .form-main{
+      padding:0 20px;
     }
   }
 }

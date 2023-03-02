@@ -62,7 +62,7 @@ address,caption,cite,code,dfn,th,var, em, i , b{font-style:normal;font-weight:40
 
 a{text-decoration:none;outline:none; color:#666;}
 
-a:hover{text-decoration:none; color:#1753c1}
+a:hover{text-decoration:none; color: darken($red, 25%);}
 
 button, input{ border:none; }
 

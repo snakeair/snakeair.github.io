@@ -19,7 +19,7 @@
       <div btn class="tab-btn">密码登录</div>
     </div>
     <div class="form-main">
-      <div class="phone-login" style="display: none;">
+      <div class="phone-login">
         <div class="form-box">
           <span class="form-title">手机号：</span>
           <select class="inp-sel">
@@ -70,18 +70,18 @@
           <div class="img-box"><img class="img" class="img-code" alt=""></div>
         </div>
       </div>
-      <div class="pwd-login">
+      <div class="pwd-login" style="display: none;">
         <div class="form-box">
           <span class="form-title">用户名：</span>
           <input type="text" class="inp-name" placeholder="请输入用户名/手机号/邮箱" maxlength="11">
         </div>
         <div class="form-box">
           <span class="form-title">用户密码：</span>
-          <input type="password" placeholder="请输入用户密码" class="inp-name">
+          <input type="password" placeholder="请输入用户密码" class="inp-pwd">
         </div>
         <div class="form-box">
           <span class="form-title">验证码：</span>
-          <input type="text" class="inp-code" placeholder="请输入验证码">
+          <input type="text" class="inp-pwd-code" placeholder="请输入验证码">
           <div class="img-box"><img class="img" class="img-code" alt=""></div>
         </div>
       </div>
@@ -96,7 +96,7 @@
     </footer>
   </div>
 
-  <div class="common-layer layer-reg">
+  <div class="common-layer layer-reg" style="display: none;">
     <h3 class="title">用户注册 <span btn class="close"><img class="img" src="../img/img08.png" alt=""></span></h3>
     <div class="form-main">
       <div class="phone-login">
@@ -121,21 +121,63 @@
       </div>
       <p class="pact-box">
         <label class="common-checkbox">
-          <input type="checkbox" class="input">
+          <input type="checkbox" class="input inp-check">
           <span class="label"></span>
         </label>
         我已阅读并同意
         <a class="a-pact" href="https://ms.morketing.com/user/privacy" target="
         ">《用户注册隐私条款协议》</a>
       </p>
-      <div class="reg-btn" btn>立即注册</div>
+      <div class="submit-btn" btn>立即注册</div>
       <div class="reg-box">
-        <span class="left" btn><span class="icon-box"><img class="icon" src="../img/img05.png" alt=""></span>微信登录</span>
-        <span class="right">还没有账号？<span class="log-btn" btn>立即注册</span></span>
+        <span class="left" btn><span class="icon-box"><img class="icon" src="../img/img05.png" alt=""></span>微信注册</span>
+        <span class="right">已有账号？<span class="log-btn" btn>立即登录</span></span>
       </div>
     </div>
   </div>
+
+  <div class=" common-layer layer-wx-login" style="display: none;">
+    <h3 class="title">微信登录 <span btn class="close"><img class="img" src="../img/img08.png" alt=""></span></h3>
+    <div class="img-box">
+      <img class="img" src="../img//default/img04.jpg" alt="">
+    </div>
+    <p class="use-wx">使用微信扫一扫登录</p>
+    <div class="reg-box">
+      <span class="left" btn><span class="icon-box"><img class="icon" src="../img/img06.png" alt=""></span>手机登录</span>
+      <span class="right">还没有账号？<span class="reg-btn" btn>立即注册</span></span>
+    </div>
+  </div>
+
+  <div class=" common-layer layer-wx-reg">
+    <h3 class="title">微信注册 <span btn class="close"><img class="img" src="../img/img08.png" alt=""></span></h3>
+    <div class="img-box">
+      <img class="img" src="../img//default/img04.jpg" alt="">
+    </div>
+    <p class="use-wx">使用微信扫一扫立即注册</p>
+    <p class="pact-box">
+      注册即表明同意
+      <a class="a-pact" href="https://ms.morketing.com/user/privacy" target="
+            ">《用户注册隐私条款协议》</a>
+    </p>
+    <div class="reg-box">
+      <span class="left" btn><span class="icon-box"><img class="icon" src="../img/img06.png" alt=""></span>手机注册</span>
+      <span class="right">还没有账号？<span class="reg-btn" btn>立即注册</span></span>
+    </div>
+  </div>
+
+
+  <div class="common-layer layer-msg">
+    <div class="show-main">
+      <span class="icon"><img class="img" src="../img/img09.png" alt=""></span>
+      <span class="text">手机号码错误</span>
+    </div>
+  </div>
+
 </body>
 <script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/base.js"></script>
+<script>
+
+</script>
 
 </html>
