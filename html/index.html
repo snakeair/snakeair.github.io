@@ -13,8 +13,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name=“app-mobile-web-app-status-bar-style” content=“black-translucent” />
 
-  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
   <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
       </div>
       <nav class="nav-list">
         <div class="nav-box">
-          <span class="show">MS Events</span>
+          <a href="javascript:;" class="show">MS Events</a>
           <ul class="show-list">
             <li class="li"><a href="javascript:;">MS亚太2023</a></li>
             <li class="li"><a href="javascript:;">MS亚洲2022</a></li>
@@ -128,8 +128,8 @@
     <!--最新活动---->
     <section class="floor campaign-floor">
       <h3 class="common-title">最新活动</h3>
-      <div class="campaign-main clearfix">
-        <div class="img-box">
+      <div class="campaign-main clearfix hover">
+        <div class="img-box imghover">
           <a href="javascript:;">
             <img src="../img/default/img01.png" class="img" alt="">
           </a>
@@ -193,8 +193,8 @@
     <!--MS360 ------>
     <section class="floor ms360-floor">
       <h3 class="common-title">MS360</h3>
-      <section class="news-list">
-        <div class="img-box">
+      <section class="news-list hover">
+        <div class="img-box imghover">
           <a href="javascript:;">
             <div class="news-tag">品牌故事</div>
             <img src="../img/default/img03.png" class="img" alt="新闻标题">
@@ -211,8 +211,8 @@
           </footer>
         </div>
       </section>
-      <section class="news-list">
-        <div class="img-box">
+      <section class="news-list hover">
+        <div class="img-box imghover">
           <a href="javascript:;">
             <div class="news-tag">品牌故事</div>
             <img src="../img/default/img03.png" class="img" alt="新闻标题">
@@ -229,8 +229,8 @@
           </footer>
         </div>
       </section>
-      <section class="news-list">
-        <div class="img-box">
+      <section class="news-list hover">
+        <div class="img-box imghover">
           <a href="javascript:;">
             <div class="news-tag">品牌故事</div>
             <img src="../img/default/img03.png" class="img" alt="新闻标题">
@@ -267,14 +267,204 @@
   <br>
   <br>
   <br>
+
+  <div class="cloud"></div>
+  <!-- 登陆--->
+  <div class="common-layer layer-login" style="display: none;">
+    <h3 class="title">登录 <span btn class="close"><img class="img" src="../img/img08.png" alt=""></span></h3>
+    <div class="tab-box">
+      <div btn class="tab-btn cur">短信登录</div>
+      <div btn class="tab-btn">密码登录</div>
+    </div>
+    <div class="form-main">
+      <div class="phone-login">
+        <div class="form-box">
+          <span class="form-title">手机号：</span>
+          <select class="inp-sel">
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+          </select>
+          <input type="text" class="inp-phone" placeholder="请输入手机号" maxlength="11">
+        </div>
+        <div class="form-box">
+          <span class="form-title">短信验证码：</span>
+          <input type="text" class="inp-sms" placeholder="请输入短信验证码">
+          <span class="get-code">发送验证码</span>
+          <span class="wait-code"><em class="size">30</em>s后重发</span>
+        </div>
+        <div class="form-box">
+          <span class="form-title">验证码：</span>
+          <input type="text" class="inp-code" placeholder="请输入验证码">
+          <div class="img-box imghover"><img class="img" class="img-code" alt=""></div>
+        </div>
+      </div>
+      <div class="pwd-login" style="display: none;">
+        <div class="form-box">
+          <span class="form-title">用户名：</span>
+          <input type="text" class="inp-name" placeholder="请输入用户名/手机号/邮箱" maxlength="11">
+        </div>
+        <div class="form-box">
+          <span class="form-title">用户密码：</span>
+          <input type="password" placeholder="请输入用户密码" class="inp-pwd">
+        </div>
+        <div class="form-box">
+          <span class="form-title">验证码：</span>
+          <input type="text" class="inp-pwd-code" placeholder="请输入验证码">
+          <div class="img-box imghover"><img class="img" class="img-code" alt=""></div>
+        </div>
+      </div>
+      <div class="reg-box">
+        <span class="left" btn><span class="icon-box"><img class="icon" src="../img/img05.png" alt=""></span>微信登录</span>
+        <span class="right">还没有账号？<span class="reg-btn" btn>立即注册</span></span>
+      </div>
+    </div>
+    <footer class="layer-footer">
+      <div class="close-btn">取消</div>
+      <div class="submit-btn">确定</div>
+    </footer>
+  </div>
+
+  <!--  注册--->
+  <div class="common-layer layer-reg" style="display: none;">
+    <h3 class="title">用户注册 <span btn class="close"><img class="img" src="../img/img08.png" alt=""></span></h3>
+    <div class="form-main">
+      <div class="phone-login">
+        <div class="form-box">
+          <select class="inp-sel">
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+            <option value="+86">+86</option>
+          </select>
+          <input type="text" class="inp-phone" placeholder="请输入手机号" maxlength="11">
+        </div>
+        <div class="form-box">
+          <input type="text" class="inp-sms" placeholder="请输入短信验证码">
+          <span class="get-code">发送验证码</span>
+          <span class="wait-code"><em class="size">30</em>s后重发</span>
+        </div>
+      </div>
+      <p class="pact-box">
+        <label class="common-checkbox">
+          <input type="checkbox" class="input inp-check">
+          <span class="label"></span>
+        </label>
+        我已阅读并同意
+        <a class="a-pact" href="https://ms.morketing.com/user/privacy" target="
+          ">《用户注册隐私条款协议》</a>
+      </p>
+      <div class="submit-btn" btn>立即注册</div>
+      <div class="reg-box">
+        <span class="left" btn><span class="icon-box"><img class="icon" src="../img/img05.png" alt=""></span>微信注册</span>
+        <span class="right">已有账号？<span class="log-btn" btn>立即登录</span></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  微信登陆--->
+  <div class=" common-layer layer-wx-login" style="display: none;">
+    <h3 class="title">微信登录 <span btn class="close"><img class="img" src="../img/img08.png" alt=""></span></h3>
+    <div class="img-box imghover">
+      <img class="img" src="../img//default/img04.jpg" alt="">
+    </div>
+    <p class="use-wx">使用微信扫一扫登录</p>
+    <div class="reg-box">
+      <span class="left" btn><span class="icon-box"><img class="icon" src="../img/img06.png" alt=""></span>手机登录</span>
+      <span class="right">还没有账号？<span class="reg-btn" btn>立即注册</span></span>
+    </div>
+  </div>
+
+  <!--  微信注册--->
+  <div class=" common-layer layer-wx-reg">
+    <h3 class="title">微信注册 <span btn class="close"><img class="img" src="../img/img08.png" alt=""></span></h3>
+    <div class="img-box imghover">
+      <img class="img" src="../img//default/img04.jpg" alt="">
+    </div>
+    <p class="use-wx">使用微信扫一扫立即注册</p>
+    <p class="pact-box">
+      注册即表明同意
+      <a class="a-pact" href="https://ms.morketing.com/user/privacy" target="
+              ">《用户注册隐私条款协议》</a>
+    </p>
+    <div class="reg-box">
+      <span class="left" btn><span class="icon-box"><img class="icon" src="../img/img06.png" alt=""></span>手机注册</span>
+      <span class="right">还没有账号？<span class="reg-btn" btn>立即注册</span></span>
+    </div>
+  </div>
+
+  <!--   错误提醒--->
+  <div class="common-layer layer-msg">
+    <div class="show-main">
+      <span class="icon"><img class="img" src="../img/img09.png" alt=""></span>
+      <span class="text">手机号码错误</span>
+    </div>
+  </div>
+
 </body>
 <script src="../js/jquery-1.11.3.min.js"></script>
 <script src="../js/swiper.min.js"></script>
-<script src="../js/fastclick.js"></script>
 <script src="../js/base.js"></script>
 <!-- Initialize Swiper -->
 
+<script>
 
+  // 首页js
+  $(function () {
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="swiper-btn">' + (index + 1) + "</span>";
+      },
+    });
+
+  });
+</script>
 
 
 </html>

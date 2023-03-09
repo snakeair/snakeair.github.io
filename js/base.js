@@ -15,15 +15,35 @@ function errorFn(t) {
 }
 
 $(function () {
-  FastClick.attach(document.body);
+  $(".menu-btn").on("click", function () {
+    $(this).toggleClass("menu-btn-active");
+    $(".nav-main .nav-list").toggle(300);
+  });
+  $(".phone-nav-list .nav-box .show").on("click", function () {
+    $(this)
+      .parents(".nav-box")
+      .siblings(".nav-box")
+      .find(".show-list")
+      .hide(300);
+    $(this).parents(".nav-box").find(".show-list").toggle(300);
+  });
 });
 
 // 登陆注册相关js
 $(function () {
+  // 现实登陆注册弹窗
+  $(".nav-main .login-box .login").on("click", function () {
+    $(".layer-login, .cloud").show();
+  });
+  $(".nav-main .login-box .reg").on("click", function () {
+    $(".layer-reg, .cloud").show();
+  });
+
   $(
     ".close-btn, .common-layer .close, .layer-login .reg-btn, .layer-reg .log-btn"
   ).on("click", function () {
     $(this).parents(".common-layer").hide().find("input").val("");
+    $(".cloud").hide();
   });
 
   // 登陆注册弹窗切换
@@ -151,35 +171,16 @@ $(function () {
   });
 });
 
-// 首页js
+// activity
 $(function () {
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="swiper-btn">' + (index + 1) + "</span>";
-    },
-  });
-  $(".menu-btn").on("click", function () {
-    $(this).toggleClass("menu-btn-active");
-    $(".nav-main .nav-list").toggle(300);
-  });
-  $(".phone-nav-list .nav-box .show").on("click", function () {
-    $(this)
-      .parents(".nav-box")
-      .siblings(".nav-box")
-      .find(".show-list")
-      .hide(300);
-    $(this).parents(".nav-box").find(".show-list").toggle(300);
+  $(".activity-pages .floor-three .tab-box .tab-btn").on("click", function () {
+    $(this).addClass("cur").siblings(".tab-btn").removeClass("cur");
+    if ($(this).index() == 0) {
+      $(".activity-pages .floor-three .news-list-one").show();
+      $(".activity-pages .floor-three .news-list-two").hide();
+    } else {
+      $(".activity-pages .floor-three .news-list-one").hide();
+      $(".activity-pages .floor-three .news-list-two").show();
+    }
   });
 });
