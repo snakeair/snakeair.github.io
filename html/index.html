@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>捷融贷</title>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" href="/favicon.ico" /> -->
+  <meta http-equiv=“content-type” content=“text/html”>
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name=“app-mobile-web-app-status-bar-style” content=“black-translucent” />
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+</head>
+
+<body>
+  <article class="page-page">
+    <header class="page-header">
+      <div class="logo-box"><img src="../img/logo.png" alt="捷融贷" title="捷融贷" class="logo" alt=""></div>
+      <div class="right-txt">具体放款金额以审批结果为准</div>
+    </header>
+    <section class="banner-main">
+      <div class="txt-show">
+        <h3 class="banner-title">温馨提示</h3>
+        <p class="banner-txt">近期无贷款需求者及中介同行请勿申请，以免打扰到您</p>
+        <p class="banner-txt">单位未缴纳社保和公积金，请不要申请。</p>
+        <p class="banner-txt">必须单位正在缴纳，并且连续缴纳一年以上</p>
+        <div class="banner-big">填写咨询&专业贷款顾问服务</div>
+      </div>
+    </section>
+    <section class="form-main">
+      <form id="form" name="form" action="" onSubmit="return submitFn()">
+        <div class="form-list">
+          <input type="text" class="inp" name="name" placeholder="请输入姓名">
+        </div>
+        <div class="form-list">
+          <input type="text" class="inp" name="mobile" placeholder="请输入手机号">
+        </div>
+        <div class="form-list">
+          <input type="text" class="inp" name="code" placeholder="请输入验证码">
+          <div class="get-code">获取验证码</div>
+          <div class="wait-code" style="display: none;">(<span class="num">60</span>s)后获取</div>
+        </div>
+        <div class="form-list-check">
+          <h4 class="form-title">1.请选择您所在的城市</h4>
+          <label class="common-checkbox-txt"><input name="city" type="radio" class="input"><span
+              class="label">北京</span></label>
+        </div>
+        <div class="form-list-check">
+          <h4 class="form-title">2.资金需求</h4>
+          <label class="common-checkbox-txt"><input name="money" type="radio" class="input"><span
+              class="label">5-10万</span></label>
+          <label class="common-checkbox-txt"><input name="money" type="radio" class="input"><span
+              class="label">10-15万</span></label>
+          <label class="common-checkbox-txt"><input name="money" type="radio" class="input"><span
+              class="label">15-20万</span></label>
+        </div>
+        <div class="form-list-check">
+          <h4 class="form-title">3.资质证明（可多选）</h4>
+          <label class="common-checkbox-txt"><input type="checkbox" name="moneySize" class="input"><span
+              class="label">房产</span></label>
+          <label class="common-checkbox-txt"><input type="checkbox" name="moneySize" class="input"><span
+              class="label">车产</span></label>
+          <label class="common-checkbox-txt"><input type="checkbox" name="moneySize" class="input"><span
+              class="label">营业执照</span></label>
+          <label class="common-checkbox-txt"><input type="checkbox" name="moneySize" class="input"><span
+              class="label">公积金</span></label>
+          <label class="common-checkbox-txt"><input type="checkbox" name="moneySize" class="input"><span
+              class="label">社保</span></label>
+        </div>
+        <div class="pact">
+          <input type="checkbox" class="input pact-checkbox ">
+          我已经阅读并同意<span class="blue pact-btn">《注册协议》</span><span class="blue pact-btn">《隐私协议》</span><span
+            class="blue pact-btn">《信息公共授权书》</span>
+        </div>
+        <button class="form-btn">立即提交</button>
+        <p class="warning"><img src="../img/img01.png" class="img" alt="">注：公积金连续缴存一年以上，且个缴大于10000</p>
+      </form>
+    </section>
+    <section class="show-floor-1">
+      <h3 class="floor-title">为什么选择我们</h3>
+      <div class="list-main">
+        <div class="list-box">
+          <div class="img-box">
+            <img src="../img/img04.png" class="img" alt="">
+          </div>
+          <p>银行放款</p>
+          <p>信用贷款无需低压</p>
+        </div>
+        <div class="list-box">
+          <div class="img-box">
+            <img src="../img/img05.png" class="img" alt="">
+          </div>
+          <p>期限灵活</p>
+          <p>最长分期96期</p>
+        </div>
+        <div class="list-box">
+          <div class="img-box">
+            <img src="../img/img06.png" class="img" alt="">
+          </div>
+          <p>放款时间</p>
+          <p>最快1小时到账</p>
+        </div>
+      </div>
+    </section>
+    <section class="show-floor-2">
+      <h3 class="floor-title">三步借款</h3>
+      <div class="show-main"></div>
+      <ul>
+        <li class="info-show">
+          <p>提交申请</p>
+        </li>
+        <li class="info-show">
+          <p>线上申请</p>
+          <p>线下办理</p>
+        </li>
+        <li class="info-show">
+          <p>审核放款</p>
+        </li>
+      </ul>
+    </section>
+    <section class="show-floor-3">
+      <p class="small">合作机构</p>
+      <p class="big mb">民生银行、平安银行</p>
+      <p class="small">温馨提示</p>
+      <p class="big">贷款有风险 借贷需谨慎</p>
+      <p class="big">请根据个人能力合理贷款，理性消费，避免逾期</p>
+      <p class="big">贷款额度、放款时间以实际审批结果为准</p>
+      <p class="big">各类产品年化利率<span class="yellow">3.6%-24%</span></p>
+    </section>
+    <footer class="page-footer">
+      <p class="info">南京捷融金服信息科技有限公司</p>
+      <p class="info">备案：苏ICP备19068009号-1</p>
+      <p class="info">捷融金服及关联公司仅提供贷款咨询/代办服务</p>
+    </footer>
+
+
+
+    <!-- 弹窗 -->
+    <div style="display: none;" class="layer-msg err animate__fadeInDown animate__animated animate__faster ">
+      <div class="msg"></div>
+    </div>
+    <div class="cloud"></div>
+    <div class="layer layer-pact">
+      <div class="show-box">
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+        <p>1</p>
+      </div>
+      <div class="layer-btn">确定</div>
+    </div>
+  </article>
+
+
+
+</body>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/base.js"></script>
+
+
+
+</html>
