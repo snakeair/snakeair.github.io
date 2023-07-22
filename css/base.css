@@ -405,7 +405,24 @@ input[type=number] {
 .page-page {
   width: 100%;
   min-height: 100vh;
-  background: #fff url("../img/img08.png") no-repeat center bottom/100%;
+  background-image: url("../img/img02.png"), url("../img/img08.png");
+  background-position: center top, center bottom;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+}
+.page-page .h1, .page-page h2 {
+  position: absolute;
+  z-index: -999;
+  left: -999px;
+  top: -999px;
+}
+.page-page .bg {
+  position: absolute;
+  width: 100%;
+  height: 157.0666666667vw;
+  margin-bottom: 5.7777777778vw;
+  z-index: 1;
+  background: url("../img/img02.png") no-repeat center top/100%;
 }
 .page-page .page-header {
   display: flex;
@@ -435,16 +452,10 @@ input[type=number] {
 }
 .page-page .banner-main {
   position: relative;
-  width: 100%;
-  height: 133.3333333333vw;
-  margin-bottom: 5.7777777778vw;
-  background: url("../img/img02.png") no-repeat center top/100%;
-}
-.page-page .banner-main .txt-show {
-  position: absolute;
   text-align: center;
-  bottom: 0;
-  width: 100%;
+  z-index: 10;
+  padding-top: 102.2222222222vw;
+  margin-bottom: 5.7777777778vw;
 }
 .page-page .banner-main .banner-title {
   font-weight: bold;
@@ -471,8 +482,10 @@ input[type=number] {
   color: #fff;
 }
 .page-page .form-main {
+  position: relative;
   width: 89.4222222222vw;
   margin: 0 auto 0;
+  z-index: 10;
 }
 .page-page .form-main .form-list {
   box-sizing: border-box;
@@ -534,7 +547,7 @@ input[type=number] {
 }
 .page-page .form-main .pact .pact-checkbox {
   vertical-align: middle;
-  margin-top: -2px;
+  margin-top: -3px;
 }
 .page-page .form-main .pact .blue {
   color: #5189ff;
@@ -557,7 +570,7 @@ input[type=number] {
 }
 .page-page .form-main .warning .img {
   vertical-align: middle;
-  margin-top: -2px;
+  margin-top: -3px;
   margin-right: 4px;
   width: 3.7333333333vw;
   height: 3.2888888889vw;
