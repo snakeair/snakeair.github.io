@@ -49,7 +49,7 @@ video {
   left: 0%;
   top: 0%;
   z-index: 100;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(47, 47, 77, 0.6);
 }
 
 .ovh {
@@ -532,6 +532,10 @@ input[type=number] {
   margin-bottom: 6.2222222222vw;
   color: #999;
 }
+.page-page .form-main .pact .pact-checkbox {
+  vertical-align: middle;
+  margin-top: -2px;
+}
 .page-page .form-main .pact .blue {
   color: #5189ff;
 }
@@ -553,6 +557,8 @@ input[type=number] {
 }
 .page-page .form-main .warning .img {
   vertical-align: middle;
+  margin-top: -2px;
+  margin-right: 4px;
   width: 3.7333333333vw;
   height: 3.2888888889vw;
 }
@@ -710,14 +716,14 @@ input[type=number] {
   overflow-y: auto;
   box-sizing: border-box;
   width: 100%;
-  height: calc(100% - 8.8888888889vw);
+  height: calc(100% - 11.5555555556vw);
   padding: 3.5555555556vw;
 }
 .page-page .layer-pact .layer-btn {
   text-align: center;
   width: 100%;
-  height: 8.8888888889vw;
-  line-height: 8.8888888889vw;
+  height: 11.5555555556vw;
+  line-height: 11.5555555556vw;
   border-top: 1px solid #1c28c7;
   color: #1c28c7;
 }
