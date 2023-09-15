@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>捷融贷--公积金贷款</title>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" href="/favicon.ico" /> -->
+  <meta http-equiv=“content-type” content=“text/html”>
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name=“app-mobile-web-app-status-bar-style” content=“black-translucent” />
+
+  <link rel="stylesheet" href="../css/gong.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+</head>
+
+<body>
+  <article class="gong-pages">
+    <header class="tags-header">
+      <p>温馨提示</p>
+      <p>中介同行请勿申请，以免打扰到您</p>
+      <p>单位未缴纳公积金，请不要申请</p>
+      <p>公积金必须单位正在缴纳，且已连续缴纳一年以上</p>
+    </header>
+    <section class="form-main">
+      <form id="form" name="form" action="" onSubmit="return submitFn()">
+        <div class="form-list">
+          <input type="text" class="inp mobile" name="mobile" maxlength="11" placeholder="请输入手机号">
+        </div>
+        <div class="form-list">
+          <input type="number" class="inp" name="code" placeholder="请输入验证码">
+          <div class="get-code">获取验证码</div>
+          <div class="wait-code" style="display: none;">(<span class="num">60</span>s)后获取</div>
+        </div>
+        <div class="form-list">
+          <input type="text" class="inp name" name="name" placeholder="请输入您的姓名">
+        </div>
+        <div class="form-list">
+          <select class="inp select" name="money" placeholder="请选择贷款金额">
+            <option selected="true" value="0">请选择贷款金额</option>
+            <option value="10000">0-10000</option>
+            <option value="100000">10001-100000</option>
+          </select>
+        </div>
+        <div class="form-list address">
+          <select class="inp-address"  id="province" name="province" placeholder="请选择所在城市">
+          </select>
+          <select class="inp-address"  id="city" name="city" placeholder="请选择所在城市">
+          </select>
+        </div>
+        <div class="form-list">
+          <select class="inp select" name="size" placeholder="请选择缴纳基数">
+            <option selected="true" value="0">请选择缴纳基数</option>
+            <option value="10000">0-10000</option>
+            <option value="100000">10001-100000</option>
+          </select>
+        </div>
+        <div class="form-list">
+          <select class="inp select" name="type" placeholder="请选择单位属性">
+            <option selected="true" value="0">请选择单位属性</option>
+            <option value="10000">0-10000</option>
+            <option value="100000">10001-100000</option>
+          </select>
+        </div>
+
+        <div class="pact">
+          <input type="checkbox" id="pact-check" class="input pact-checkbox ">
+          我已经阅读并同意<span class="blue pact-btn">《注册协议》</span><span class="blue pact-btn">《隐私协议》</span><span
+            class="blue pact-btn">《信息公共授权书》</span>
+        </div>
+        <button class="form-btn">立即提交</button>
+      </form>
+    </section>
+    <section class="floor-02"></section>
+    <section class="floor-03"></section>
+    <section class="floor-04"></section>
+    <footer class="common-page-footer">
+      <p class="info">南京捷融金服信息科技有限公司</p>
+      <p class="info">备案：苏ICP备19068009号-1</p>
+      <p class="info">捷融金服及关联公司仅提供贷款咨询/代办服务</p>
+    </footer>
+  </article>
+
+  <!-- 弹窗 -->
+  <div class="cloud"></div>
+  <div style="display: none;" class="layer-msg err animate__fadeInDown animate__animated animate__faster ">
+    <div class="msg"></div>
+  </div>
+
+  <div class="layer layer-ok">
+    <h3 class="layer-title">申请成功</h3>
+    <div class="show-box">
+      <p>我司将提供免费货款方案，10分钟后专属客服经理将通过电话联系您，请注意接听！</p>
+      <p class="blue">捷融金服，助货大平台，让你贷款无忧</p>
+      <p class="yellow">温馨提示:为了保障您的通过率，请避免在网络上多次提交贷款申请!</p>
+    </div>
+    <div class="layer-btn">确定</div>
+  </div>
+
+  <div class="layer-pact">
+    <div class="show-box">
+      <p>
+        捷融金服，助货大平台，让你贷款无忧捷融金服，助货大平台，让你贷款无忧捷融金服，助货大平台，让你贷款无忧捷融金服，助货大平台，让你贷款无忧捷融金服，助货大平台，让你贷款无忧捷融金服，助货大平台，让你贷款无忧捷融金服，助货大平台，让你贷款无忧
+      </p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+    </div>
+    <div class="layer-btn">确定</div>
+  </div>
+  <!-- 弹窗 -- end -->
+
+</body>
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/fastclick.js"></script>
+<script src="../js/gong.js"></script>
+
+
+
+</html>
