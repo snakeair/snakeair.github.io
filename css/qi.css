@@ -557,7 +557,6 @@ input[type=number] {
 }
 .qi-pages .form-main .form-list {
   box-sizing: border-box;
-  overflow: hidden;
   position: relative;
   width: 100%;
   height: 11.6455696203vw;
@@ -632,58 +631,4 @@ input[type=number] {
 }
 .qi-pages .common-page-footer p {
   line-height: 4.5569620253vw;
-}
-
-.addr-fixed-main {
-  position: fixed;
-  overscroll-behavior: contain;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  background-color: #fff;
-}
-.addr-fixed-main .flex {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  height: 30vh;
-}
-.addr-fixed-main .province-main {
-  overflow-y: auto;
-  width: 49vw;
-  height: 30vh;
-}
-.addr-fixed-main .city-main {
-  width: 49vw;
-  height: 100%;
-}
-.addr-fixed-main .addr-list {
-  width: 100%;
-}
-.addr-fixed-main .addr-list li {
-  height: 6.3291139241vw;
-  font-size: 4.0506329114vw;
-  line-height: 6.3291139241vw;
-  width: 100%;
-  color: #666;
-}
-.addr-fixed-main .btn-box {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-}
-.addr-fixed-main .btn-box .submit-btn {
-  width: 50%;
-  height: 11.6455696203vw;
-  border-radius: 1.3924050633vw;
-  font-size: 4.3037974684vw;
-  line-height: 11.6455696203vw;
-  color: #fff;
-  background-color: #00a8ff;
 }

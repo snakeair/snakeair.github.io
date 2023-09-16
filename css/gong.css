@@ -572,13 +572,6 @@ input[type=number] {
   font-size: 3.6708860759vw;
   background-color: #fff;
 }
-.gong-pages .form-main .form-list.address {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
 .gong-pages .form-main .form-list .inp {
   box-sizing: border-box;
   width: 100%;
@@ -604,15 +597,6 @@ input[type=number] {
 }
 .gong-pages .form-main .form-list .wait-code {
   color: #aaa;
-}
-.gong-pages .form-main .form-list .inp-address {
-  box-sizing: border-box;
-  width: 49%;
-  padding: 0 10px;
-  text-align: center;
-}
-.gong-pages .form-main .form-list .inp-address:first-of-type {
-  border-right: 1px solid #eee;
 }
 .gong-pages .form-main .pact {
   font-size: 2.7848101266vw;
