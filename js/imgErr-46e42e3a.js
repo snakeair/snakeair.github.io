@@ -1,0 +1,1 @@
+import{ar as t}from"../default/default-1af7a19e.js";function r(){return{errImgFn:async r=>{let e=await t((()=>import("./img-13-68b6256e.js")),[],import.meta.url);r.target.setAttribute("src",e.default)}}}export{r as e};
