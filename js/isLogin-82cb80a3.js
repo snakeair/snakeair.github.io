@@ -1,1 +1,0 @@
-import{a as e,n as t,$ as n}from"../default/default-6ef38c5b.js";function s(){const s=e();return{isLoginFn:()=>{let e=t.get("userId");e&&""!=e||s.push({path:"/"})},getLoginInfoFn:()=>{n("/api/user/selectUserInfo",{}).then((e=>{}))}}}export{s as i};
