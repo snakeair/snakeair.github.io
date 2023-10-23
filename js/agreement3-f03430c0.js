@@ -1,0 +1,1 @@
+import{p as a}from"./pactThree-65600d40.js";import{d as e,e as s,f as t,h as d,_ as m}from"../default/default-90566a56.js";const p={class:"agreement-page"},r=m(e({__name:"agreement3",setup:e=>(e,m)=>(s(),t("div",p,[d(a)]))}),[["__scopeId","data-v-b914d601"]]);export{r as default};
