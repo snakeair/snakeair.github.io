@@ -16,7 +16,7 @@
 
   // 添加统计
   // console.log("other js");
-  var url = window.location.href.split("?")[1] || "";
+  var url = window.location.href.split("?")[1];
   let channel = "";
   url.split("&").forEach(function (el) {
     let arr = el.split("=");
