@@ -1,0 +1,1 @@
+const t=t=>/^(1[3|4|5|6|7|8|9])[\d]{9}$/g.test(t);function e(t,r=new Map){if("object"==typeof t){let n=Array.isArray(t)?[]:{};if(r.get(t))return r.get(t);r.set(t,n);for(const o in t)n[o]=e(t[o],r);return n}return t}export{e as c,t as p};
