@@ -1,1 +1,0 @@
-import{az as s}from"../default/default-de349c9c.js";const e=s("main",{state:()=>({msg:"hello",channel:"ceshi1",users:{},userMobile:"",userCheckedPolicy:!1}),getters:{},actions:{actionMsg(s){this.msg=s}}});export{e as i};
