@@ -1,0 +1,1 @@
+import{p as o}from"../default/default-3df10792.js";import{a as s}from"./js.cookie-d59fc71c.js";import{$ as t}from"./axios-0703b32e.js";function e(){const e=o();return{isLoginFn:()=>{let o=s.get("userId");o&&""!=o||e.push({path:"/"})},getLoginInfoFn:()=>{t("/api/user/selectUserInfo",{}).then(o=>{})}}}export{e as i};
